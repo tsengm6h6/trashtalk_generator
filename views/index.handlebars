@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2 class='text-center my-5'>你想對誰說幹話？</h2>
+    </div>
+  </div>
+  <form method='POST' action="/">
+    <div class="row card-deck">
+      <div class="col-4 card">
+        <div class="text-center form-check">
+          <label for="1" class='form-check-label'>
+            <div class="wrap">
+              <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" alt=""
+                class="card-img-top">
+            </div>
+            <input type="radio" id='1' class='form-check-input' name='person' value='engineer' {{#ifChecked
+              choice 'engineer' }} {{/ifChecked}}>
+            工程師
+          </label>
+        </div>
+      </div>
+      <div class="col-4 card">
+        <div class="text-center form-check">
+          <label for="2" class='form-check-label'>
+            <div class='wrap'>
+              <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" alt=""
+                class="card-img-top">
+            </div>
+            <input type="radio" id='2' class='form-check-input' name='person' value='designer' {{#ifChecked
+              choice 'designer' }} {{/ifChecked}}>
+            設計師
+          </label>
+        </div>
+      </div>
+      <div class="col-4 card">
+        <div class="text-center form-check">
+          <label for="3" class='form-check-label'>
+            <div class="wrap">
+              <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" alt=""
+                class="card-img-top">
+            </div>
+            <input type="radio" id='3' class='form-check-input' name='person' value='entrepreneur' {{#ifChecked
+              choice 'entrepreneur' }} {{/ifChecked}}>
+            創業家
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-2">
+        <button type='submit' class="btn btn-primary mr-3" style='width: 8rem'>產生幹話</button>
+      </div>
+      <div class="col-10">
+        <div class='form-control'>
+          {{#if text}}
+          {{{text}}}
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

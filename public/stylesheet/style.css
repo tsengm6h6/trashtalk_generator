@@ -1,0 +1,21 @@
+.container {
+  max-width: 850px;
+}
+
+.form-check {
+  padding-left: 0;
+}
+
+.wrap {
+  height: 100px;
+  overflow: hidden;
+  margin: 5px;
+}
+
+img {
+  margin: 10px auto;
+}
+
+label {
+  padding: 10px;
+}
