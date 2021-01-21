@@ -41,6 +41,6 @@ $ npm run dev
 
 5. Find the below message for successful activation
 ```
-Express is listening on http://localhost/3000
+Express is listening on http://localhost:3000
 ```
-You may now visit the application on your browser with URL: http://localhost/3000
+You may now visit the application on your browser with URL: http://localhost:3000
